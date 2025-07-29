@@ -1,6 +1,6 @@
 
     body {
-      font-family: 'Georgia', serif;
+      font-family:'Times New Roman', Times, serif;
       padding: 2rem;
       background: #fefefe;
       color: #222;
@@ -16,6 +16,14 @@
       background: #f9f9f9;
       border-radius: 5px;
     }
+
+.conclusion-class {
+  display: none;
+}
+
+.conclusion-class.selected-conclusion {
+  display: block;
+}
 
     @media (max-width: 600px) {
       body {
