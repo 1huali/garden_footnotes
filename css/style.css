@@ -1,6 +1,29 @@
-/*********************************************
 
-Here is a description of any special CSS used.
-By default that's nothing.
+    body {
+      font-family: 'Georgia', serif;
+      padding: 2rem;
+      background: #fefefe;
+      color: #222;
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.6;
+    }
 
-**********************************************/
+    select {
+      font-size: 1em;
+      padding: 0.2em;
+      border: 1px solid #ccc;
+      background: #f9f9f9;
+      border-radius: 5px;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+        font-size: 1.1em;
+      }
+
+      select {
+        font-size: 1.1em;
+      }
+    }
