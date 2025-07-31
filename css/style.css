@@ -10,11 +10,12 @@
     }
 
     select {
-      font-size: 1em;
-      padding: 0.2em;
+      font-size: 1.1em;
+      /* padding: 0.2em; */
       border: 1px solid #ccc;
-      background: #f9f9f9;
-      border-radius: 5px;
+      background: #000000;
+      color: aliceblue;
+      /* border-radius: 5px; */
     }
 
 .conclusion-class {
@@ -27,11 +28,7 @@
 
     @media (max-width: 600px) {
       body {
-        padding: 1rem;
-        font-size: 1.1em;
-      }
-
-      select {
-        font-size: 1.1em;
+        /* padding: 1rem; */
+        font-size: 2.1em;
       }
     }
