@@ -1,14 +1,26 @@
-/**
-Title of Project
-Author Name
 
-This is a template. You must fill in the title,
-author, and this description to match your project!
-*/
 
 "use strict";
 
 document.addEventListener("DOMContentLoaded", function () {
+  // 1. Randomize individual flower spans
+  const flowerSpans = document.querySelectorAll("span.flower");
+
+  flowerSpans.forEach(span => {
+    // Random size
+    const sizeClasses = ["flower-small", "flower-medium", "flower-large"];
+    if (Math.random() < 0.7) {
+      const size = sizeClasses[Math.floor(Math.random() * sizeClasses.length)];
+      span.classList.add(size);
+    }
+
+    // Random fade effect
+    if (Math.random() < 0.4) {
+      span.classList.add("flower-fade");
+    }
+  });
+
+  // 2. Dynamic conclusion switching
   const conclusionBlocks = document.querySelectorAll(".conclusion-class");
 
   function showConclusionByKeyword(keyword) {

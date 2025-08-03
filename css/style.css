@@ -7,6 +7,7 @@
       max-width: 700px;
       margin: auto;
       line-height: 1.6;
+      text-align: justify;
     }
 
     select {
@@ -17,6 +18,34 @@
       color: aliceblue;
       /* border-radius: 5px; */
     }
+
+    /* ASCII flower size variations */
+    .flower {
+  display: inline-block;
+  line-height: 1;
+}
+
+.flower-small {
+  font-size: 0.8em;
+}
+
+.flower-medium {
+  font-size: 1em;
+}
+
+.flower-large {
+  font-size: 1.4em;
+}
+
+/* Fading animation for some flowers */
+.flower-fade {
+  animation: fadeInOut 6s infinite ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0.15; }
+  50% { opacity: 1; }
+}
 
 .conclusion-class {
   display: none;
